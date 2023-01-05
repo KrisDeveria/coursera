@@ -1,0 +1,128 @@
+/*BASE STYLES*/
+/*border-box makes the height and width of the box the entire thing, not just the content*/
+* {
+  box-sizing: border-box;
+}
+
+/*makes all text in the body the specified font*/
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Main heading, positioned in the center, sized to 175% of standard*/
+h1 {
+  text-align: center;
+  font-size: 175%;
+}
+
+h2{
+	/*center bold text increased by 75%*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+p{
+	/*grey background with bold font*/
+	background-color: #efefef;
+	/*50px top padding to push text down
+	below the box title*/
+	padding: 50px 10px 10px 10px;
+	border: 1px solid;
+}
+
+#Haggis {
+	background-color: rgb(102, 48, 27);
+  color: white;
+	font-weight: bold;
+	float: right;
+	position: relative;
+	top: 0px;
+	width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+	border: solid black 1px;
+}
+
+#Burrito {
+	background-color: rgb(43, 73, 33);
+  color: white;
+	font-weight: bold;
+	float: right;
+	position: relative;
+	top: 0px;
+	width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+	border: solid black 1px;
+}
+
+#Pizza {
+	background-color: rgb(228, 62, 62);
+	font-weight: bold;
+	/*positioning box title with floating and
+	relative positioning*/
+	float: right;
+	position: relative;
+	top: 0px;
+	/*padding and border to match example
+	markup*/
+	width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+	border: solid black 1px;
+}
+
+/****DESKTOP SIZE (LARGE)****/
+@media (min-width: 992px){
+
+	.large-1, .large-2, .large-3{
+		float: left;
+	}
+
+	/*setting width and margin spacing to 
+	match example markup*/
+
+	.large-1{
+		width: 30%;
+		margin-left: 25px;
+	}
+
+	.large-2{
+		width: 30%;
+		margin-left: 25px;
+	}
+
+	.large-3{
+		width: 30%;
+    margin-left: 25px;
+	}
+
+}
+
+/****TABLET SIZE (MEDIUM)****/
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.med-1, .med-2, .med-3{
+		float: left;
+	}
+
+	/*setting width and margin spacing to 
+	match example markup*/
+
+	.med-1{
+		width: 30%;
+		margin-left: 25px;
+	}
+
+	.med-2{
+		width: 30%;
+		margin-left: 25px;
+	}
+
+	.med-3{
+		width: 30%;
+		margin-left: 25px;
+	}
+
+}
